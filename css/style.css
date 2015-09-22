@@ -1,0 +1,43 @@
+/*Header*/
+header {
+	margin: 0 auto;
+	height: 250px;
+	text-align: center;
+}
+header h1 {
+	font-size:4em;
+	color: #000;
+	display: inline-block;
+	margin: 50px 10px 30px;
+}
+header h1 span {
+	color: green;
+}
+header p {
+	font-style: 2em;
+	width:500px;
+	margin: 0 auto;
+}
+.container {
+	width: 980px;
+	margin: 0 auto;
+}
+/*BODY*/
+
+/*LIST INPUTS*/
+section.list-form {
+	border-top: 2px solid black;
+	text-align: left;
+}
+.list-form ul {
+	padding: 0;
+}
+.list-form ul li{
+	display: inline-block;
+	margin-right:3em;
+	text-align: justify;
+}
+/*TOTAL*/
+section.total {
+	border-top: 2px solid black;
+}
