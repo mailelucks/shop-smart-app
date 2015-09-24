@@ -16,7 +16,7 @@
 		<p>Let's get shopping! Use the form below to begin entering items. Click on the column headings to organize in ascending/descending order. Items are automatically alphabetical. Use the on/off switch to help with budgeting.</p>
 	</header>
 	<section class="list-form container">
-		<form>
+		<form method="GET|POST">
 			<ul>
 				<li><label>Items:</label><input required type="text" name="items"></li>
 				<li><label>Price:</label><input type="number" name="currency" min="0" max="9999" step="0.01" size="4"></li>
@@ -32,24 +32,40 @@
 			<li>$2.00</li>
 			<li>3</li>
 			<li>Encinitas Farmers Market</li>
+			<li class="check options">
+				<input type="checkbox" name="checked" value="true">
+			</li>
+			<li class="switch options">
+					<input id="toggle-1" class="toggle toggle-round" type="checkbox" value="on">
+					<label for="toggle-1"></label>	
+			</li>
+			<li class="options">
+				<input type="button" name="delete" value="X">
+			</li>
 		</ul>
 		<ul>
 			<li>Listerine</li>
 			<li>$2.94</li>
 			<li>1</li>
 			<li>Target</li>
+			<li><input type="checkbox" name="checked" value="off"></li>
+			<li><input type="button" name="delete" value="X"></li>
 		</ul>
 		<ul>
 			<li>Ground Turkey Packs</li>
 			<li>$5.00</li>
 			<li>2</li>
 			<li>Trader Joe's</li>
+			<li><input type="checkbox" name="checked" value="off"></li>
+			<li><input type="button" name="delete" value="X"></li>
 		</ul>
 		<ul>
 			<li>iPhone Car Holster</li>
 			<li>$20.00</li>
 			<li>1</li>
 			<li>Target</li>
+			<li><input type="checkbox" name="checked" value="off"></li>
+			<li><input type="button" name="delete" value="X"></li>	
 		</ul>
 	</section>
 	<section class="total container">
