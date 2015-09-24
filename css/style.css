@@ -30,12 +30,28 @@ section.list-form {
 	text-align: left;
 }
 .list-form ul {
-	padding: 0;
+	padding: 0 15px;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	left: 0;
+	right: 0;
 }
 .list-form ul li{
 	display: inline-block;
 	margin-right:3em;
 	text-align: justify;
+
+}
+input {
+	display: block;
+	margin-top: 5px;
+}
+.submit {
+	float: right;
+	right: 0;
+	bottom: 0;
+	position: absolute;
 }
 /*TOTAL*/
 section.total {

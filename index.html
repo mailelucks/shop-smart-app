@@ -16,23 +16,44 @@
 		<p>Let's get shopping! Use the form below to begin entering items. Click on the column headings to organize in ascending/descending order. Items are automatically alphabetical. Use the on/off switch to help with budgeting.</p>
 	</header>
 	<section class="list-form container">
-		<div class="input-headings">
+		<form>
 			<ul>
-				<li>Item</li>
-				<li>Quantity</li>
-				<li>Price</li>
-				<li>Retailer</li>
+				<li><label>Items:</label><input required type="text" name="items"></li>
+				<li><label>Price:</label><input type="number" name="currency" min="0" max="9999" step="0.01" size="4"></li>
+				<li><label>Quantity:</label><input type="number" name="quantity"></li>
+				<li><label>Retailer:</label><input type="text" name="retailer"></li>
+				<li class="submit"><input type="submit" name="submit" value="+"></li>
 			</ul>
-		</div>
-		<div class="inputs">
-			
-		</div>
+		</form>
 	</section>
 	<section class="shop-list container">
-		
+		<ul>
+			<li>Pomegranates</li>
+			<li>$2.00</li>
+			<li>3</li>
+			<li>Encinitas Farmers Market</li>
+		</ul>
+		<ul>
+			<li>Listerine</li>
+			<li>$2.94</li>
+			<li>1</li>
+			<li>Target</li>
+		</ul>
+		<ul>
+			<li>Ground Turkey Packs</li>
+			<li>$5.00</li>
+			<li>2</li>
+			<li>Trader Joe's</li>
+		</ul>
+		<ul>
+			<li>iPhone Car Holster</li>
+			<li>$20.00</li>
+			<li>1</li>
+			<li>Target</li>
+		</ul>
 	</section>
 	<section class="total container">
-		
+		<h1>TOTAL: $26.00</h1>
 	</section>
 	<footer>
 		
