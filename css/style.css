@@ -53,7 +53,29 @@ input {
 	bottom: 0;
 	position: absolute;
 }
+/*SHOPPING LIST*/
+.shop-list ul {
+	display: block;
+	text-align: left;
+	padding: 0 15px;
+}
+.shop-list ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right:3em;
+	text-align: justify;
+}
+.shop-list ul li:first-child {
+	width: 176px;
+}
+.shop-list ul li:nth-child(2) {
+	width: 100px;
+}
+.shop-list ul li:nth-child(3) {
+	width: 42px;
+}
 /*TOTAL*/
 section.total {
 	border-top: 2px solid black;
+	text-align: center;
 }
