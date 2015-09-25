@@ -160,6 +160,17 @@ li.delete input {
     top: -1px;
     position: absolute;
 }
+/*CHECKED*/
+.checked ul.item-details li {
+	color: red;
+	text-decoration: line-through;
+}
+
+/*INACTIVE*/
+.inactive {
+	font-style: italic;
+	color: gray;
+}
 
 /*TOTAL*/
 section.total {
