@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Shop Smart App</title>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro|Lobster' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/scripts.js"></script>
@@ -27,46 +28,86 @@
 		</form>
 	</section>
 	<section class="shop-list container">
-		<ul>
-			<li>Pomegranates</li>
-			<li>$2.00</li>
-			<li>3</li>
-			<li>Encinitas Farmers Market</li>
-			<li class="check options">
-				<input type="checkbox" name="checked" value="true">
-			</li>
-			<li class="switch options">
-					<input id="toggle-1" class="toggle toggle-round" type="checkbox" value="on">
-					<label for="toggle-1"></label>	
-			</li>
-			<li class="options">
-				<input type="button" name="delete" value="X">
-			</li>
-		</ul>
-		<ul>
-			<li>Listerine</li>
-			<li>$2.94</li>
-			<li>1</li>
-			<li>Target</li>
-			<li><input type="checkbox" name="checked" value="off"></li>
-			<li><input type="button" name="delete" value="X"></li>
-		</ul>
-		<ul>
-			<li>Ground Turkey Packs</li>
-			<li>$5.00</li>
-			<li>2</li>
-			<li>Trader Joe's</li>
-			<li><input type="checkbox" name="checked" value="off"></li>
-			<li><input type="button" name="delete" value="X"></li>
-		</ul>
-		<ul>
-			<li>iPhone Car Holster</li>
-			<li>$20.00</li>
-			<li>1</li>
-			<li>Target</li>
-			<li><input type="checkbox" name="checked" value="off"></li>
-			<li><input type="button" name="delete" value="X"></li>	
-		</ul>
+		<div class="item">
+			<ul class="item-details">
+				<li>Pomegranates</li>
+				<li>$2.00</li>
+				<li>3</li>
+				<li>Encinitas Farmers Market</li>
+			</ul>
+			<ul class="options">
+				<li class="check">
+					<input class="check" type="checkbox" name="checked">
+				</li>
+				<li class="switch">
+						<input id="toggle-1" class="toggle toggle-round" type="checkbox">
+						<label for="toggle-1"></label>	
+				</li>
+				<li class="delete">
+					<input type="button" name="delete" value="X">
+				</li>
+			</ul>
+		</div>
+		<div class="item">
+			<ul class="item-details">
+				<li>Listerine</li>
+				<li>$2.94</li>
+				<li>1</li>
+				<li>Target</li>
+			</ul>
+			<ul class="options">
+				<li class="check">
+					<input type="checkbox" name="checked">
+				</li>
+				<li class="switch">
+						<input id="toggle-1" class="toggle toggle-round" type="checkbox">
+						<label for="toggle-1"></label>	
+				</li>
+				<li class="delete">
+					<input type="button" name="delete" value="X">
+				</li>
+			</ul>
+		</div>
+		<div class="item">
+			<ul class="item-details">
+				<li>Ground Turkey Packs</li>
+				<li>$5.00</li>
+				<li>2</li>
+				<li>Trader Joe's</li>
+			</ul>
+			<ul class="options">
+				<li class="check">
+					<input type="checkbox" name="checked">
+				</li>
+				<li class="switch">
+						<input id="toggle-1" class="toggle toggle-round" type="checkbox">
+						<label for="toggle-1"></label>	
+				</li>
+				<li class="delete">
+					<input type="button" name="delete" value="X">
+				</li>
+			</ul>
+		</div>
+		<div class="item">
+			<ul class="item-details">
+				<li>iPhone Car Holster</li>
+				<li>$20.00</li>
+				<li>1</li>
+				<li>Target</li>
+			</ul>
+			<ul class="options">
+				<li class="check">
+					<input type="checkbox" name="checked">
+				</li>
+				<li class="switch">
+						<input id="toggle-1" class="toggle toggle-round" type="checkbox">
+						<label for="toggle-1"></label>	
+				</li>
+				<li class="delete">
+					<input type="button" name="delete" value="X">
+				</li>
+			</ul>
+		</div>
 	</section>
 	<section class="total container">
 		<h1>TOTAL: $26.00</h1>

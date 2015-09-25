@@ -12,6 +12,7 @@ header h1 {
 }
 header h1 span {
 	color: green;
+	font-family: 'Lobster', cursive;
 }
 header p {
 	font-style: 2em;
@@ -23,10 +24,17 @@ header p {
 	margin: 0 auto;
 }
 /*BODY*/
+body {
+	font-family: 'Source Sans Pro', sans-serif;;
+}
+section {
+	display:block;
+}
 
 /*LIST INPUTS*/
 section.list-form {
 	border-top: 2px solid black;
+	border-bottom: 2px solid black;
 	text-align: left;
 }
 .list-form ul {
@@ -54,32 +62,51 @@ input {
 	position: absolute;
 }
 /*SHOPPING LIST*/
-.shop-list ul {
+.item {
 	display: block;
+	position: relative;
+	width: 100%;
+	height: 60px;
+}
+.shop-list ul {
+	display: inline-block;
 	text-align: left;
 	padding: 0 15px;
+	float: left;
 }
-.shop-list ul li {
+.shop-list ul.item-details li, .shop-list ul.options li {
 	list-style: none;
 	display: inline-block;
-	margin-right:3em;
 	text-align: justify;
 }
-.shop-list ul li:first-child {
-	width: 176px;
+.shop-list ul.item-details {
+	margin-right:3em;
 }
-.shop-list ul li:nth-child(2) {
-	width: 100px;
+.shop-list ul.item-details li:first-child {
+	width: 14em;
 }
-.shop-list ul li:nth-child(3) {
-	width: 42px;
+.shop-list ul.item-details li:nth-child(2) {
+	width: 8em;
 }
-/*TOGGLE*/
+.shop-list ul.item-details li:nth-child(3) {
+	width: 5.4em;
+}
+
+/*OPTIONS*/
+.shop-list ul.options {
+	position: absolute;
+	right:0;
+	padding-right: 2.5em;
+}
 li.options {
 	margin-right: 0!important;
 }
 li.check {
 	width: 18px!important;
+	cursor: pointer;
+}
+input[type="checkbox"] {
+	cursor: pointer;
 }
 .toggle {
   position: absolute;
@@ -128,6 +155,12 @@ input.toggle-round:checked + label:before {
 input.toggle-round:checked + label:after {
   margin-left: 17px;
 }
+li.delete input {
+	margin-top: 0!important;
+    top: -1px;
+    position: absolute;
+}
+
 /*TOTAL*/
 section.total {
 	border-top: 2px solid black;
