@@ -208,7 +208,7 @@ section.total {
   .shop-list ul.options li {
   	margin-top: .5em;
   }
-  li.delete input {
+  li.delete button {
   	position: relative;
   }
 }
