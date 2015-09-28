@@ -7,8 +7,8 @@
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro|Lobster' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/scripts.js"></script>
-	<script src="https://code.jquery.com/jquery.min.js"></script>
 </head>
 <body>
 	<header class="container">
@@ -17,15 +17,13 @@
 		<p>Let's get shopping! Use the form below to begin entering items. Click on the column headings to organize in ascending/descending order. Items are automatically alphabetical. Use the on/off switch to help with budgeting.</p>
 	</header>
 	<section class="list-form container">
-		<form method="GET|POST">
 			<ul>
-				<li><label>Items:</label><input required type="text" name="items"></li>
-				<li><label>Price:</label><input type="number" name="currency" min="0" max="9999" step="0.01" size="4"></li>
-				<li><label>Quantity:</label><input type="number" name="quantity"  min="0" max="9999" step="1" size="4"></li>
-				<li><label>Retailer:</label><input type="text" name="retailer"></li>
-				<li class="submit"><input type="submit" name="submit" value="+"></li>
+				<li><label>Items:</label><input required type="text" name="items" id="itemName"></li>
+				<li><label>Price:</label><input id="price" type="number" pattern="(\d{3})([\.])(\d{2})" name="currency" min="0" max="9999" step="0.01" size="4"></li>
+				<li><label>Quantity:</label><input id="quantity" type="number" name="quantity"  min="0" max="9999" step="1" size="4"></li>
+				<li><label>Retailer:</label><input id="retailer" type="text" name="retailer"></li>
+				<li class="submit"><input id="addItem" type="submit" name="submit" value="+"></li>
 			</ul>
-		</form>
 	</section>
 	<section class="shop-list container">
 		<div class="item">
@@ -37,14 +35,14 @@
 			</ul>
 			<ul class="options">
 				<li class="check">
-					<input class="check" type="checkbox" name="checked">
+					<input id="checked" class="check" type="checkbox" name="checked">
 				</li>
 				<li class="switch">
-						<input id="toggle-1" class="toggle toggle-round" type="checkbox">
-						<label for="toggle-1"></label>	
+						<input id="toggle" class="toggle toggle-round" type="checkbox">
+						<label for="toggle"></label>	
 				</li>
 				<li class="delete">
-					<input type="button" name="delete" value="X">
+					<button id="delete">X</button>
 				</li>
 			</ul>
 		</div>

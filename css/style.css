@@ -157,7 +157,7 @@ input.toggle-round:checked + label:before {
 input.toggle-round:checked + label:after {
   margin-left: 17px;
 }
-li.delete input {
+li.delete button {
 	margin-top: 0!important;
     top: -1px;
     position: absolute;
