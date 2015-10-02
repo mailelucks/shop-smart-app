@@ -118,12 +118,6 @@ input[type="checkbox"] {
 	font-style: italic;
 }
 
-/*INACTIVE*/
-.inactive {
-	font-style: italic;
-	color: gray;
-}
-
 /*DELETE*/
 li.delete button {
 	margin-top: 0!important;

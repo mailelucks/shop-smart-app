@@ -9,6 +9,7 @@
 		var itemRetailer = $('#retailer').val();
 		var itemRow = $('<div class="item"><ul class="item-details"><li>' + itemName + '</li><li>' + "$" + itemPrice +'</li><li>' + itemQuantity + '</li><li>' + itemRetailer + '</li></ul><ul class="options"><li class="check"><input class="check" type="checkbox" name="checked"></li><li class="delete"><button id="delete">X</button></li></ul></div>' );
 
+
 		$('.shop-list').prepend(itemRow);
     	$('itemName').val();
 	}
@@ -29,8 +30,10 @@ function checkItem() {
 $(function() {
 
     $('#addItem').on('click', addListItem);
-    $('.item').on('click', '.check', checkItem);
-    $('.item').on("click", "li.delete" , deleteItem);
+    $('body').on('click', '.check', checkItem);
+    /*THIS IS IT*/
+    $('body').on('click', '.delete' , deleteItem);
+    $('.delete').on('click', deleteItem);
     $('.list-form').keydown(function(e) {
         if (e.which == 13 ) {
             addListItem();
