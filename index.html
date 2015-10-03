@@ -14,19 +14,20 @@
 	<header class="container">
 		<i class="fa fa-shopping-cart fa-3x"></i>
 		<h1>Shop <span>Smart</span></h1>
-		<p>Let's get shopping! Use the form below to begin entering items. Click on the column headings to organize in ascending/descending order. Items are automatically alphabetical. Use the on/off switch to help with budgeting.</p>
+		<p>Let's get shopping! Use the form below to begin entering items.</p>
 	</header>
 	<section class="list-form container">
 			<ul>
-				<li><label>Items:</label><input required type="text" name="items" id="itemName"></li>
-				<li><label>Price:</label><input id="price" type="number" pattern="(\d{3})([\.])(\d{2})" name="currency" min="0" max="9999" step="0.01" size="4"></li>
+				<li><label>Item:</label><input required type="text" name="items" id="itemName"></li>
+				<!-- <li><label>Price:</label><input id="price" type="number" pattern="(\d{3})([\.])(\d{2})" name="currency" min="0" max="9999" step="0.01" size="4"></li>
 				<li><label>Quantity:</label><input id="quantity" type="number" name="quantity"  min="0" max="9999" step="1" size="4"></li>
-				<li><label>Retailer:</label><input id="retailer" type="text" name="retailer"></li>
-				<li class="submit"><input id="addItem" type="submit" name="submit" value="+"></li>
+				<li><label>Retailer:</label><input id="retailer" type="text" name="retailer"></li> -->
+				<!-- <li class="submit"><input id="addItem" type="submit" name="submit" value="+"></li> -->
 			</ul>
+			<p class="error">Please enter an Item</p>
 	</section>
 	<section class="shop-list container">
-		<div class="item">
+		<!-- <div class="item">
 			<ul class="item-details">
 				<li>Pomegranates</li>
 				<li>$2.00</li>
@@ -89,11 +90,11 @@
 					<button id="delete">X</button>
 				</li>
 			</ul>
-		</div>
+		</div> -->
 	</section>
-	<section class="total container">
+	<!-- <section class="total container">
 		<h1>TOTAL: $26.00</h1>
-	</section>
+	</section> -->
 	<footer>
 		
 	</footer>
