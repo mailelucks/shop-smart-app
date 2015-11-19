@@ -146,7 +146,7 @@ section.total {
 /*RESPONSIVE*/
 @media only screen and (max-width:800px){
   .container {
-  	width: 30em;
+  	width: 100%;
   }
   .item {
   	height: auto;
