@@ -1,7 +1,7 @@
 /*Header*/
 header {
-	margin: 0 auto;
-	height: 250px;
+	margin-top: 6.5em;
+	height: 200px;
 	text-align: center;
 }
 header h1 {
@@ -27,6 +27,14 @@ header p {
 /*BODY*/
 body {
 	font-family: 'Source Sans Pro', sans-serif;
+	background: #cc8d63; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #cc8d63 0%, #cc5f0a 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #cc8d63 0%,#cc5f0a 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #cc8d63 0%,#cc5f0a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc8d63', endColorstr='#cc5f0a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a3356', endColorstr='#800040',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 section {
 	display:block;
@@ -140,9 +148,6 @@ section.total {
   .container {
   	width: 30em;
   }
-  .list-form ul li {
-  	display: block;
-  }
   .item {
   	height: auto;
   }
@@ -152,22 +157,19 @@ section.total {
   }
   .shop-list ul {
   	float: none;
-  	display: block;
-  }
-  .shop-list ul.item-details li, .shop-list ul.options li {
-  	display: block;
-  }
-    .shop-list ul.options {
-  	position: relative;
-  }
-  .shop-list ul.options li {
-  	margin-top: .5em;
+  	display: inline-block;
   }
   li.delete button {
   	position: relative;
   }
 }
 @media only screen and (max-width:500px){
+	header {
+		height:160px;
+	}
+	header h1 {
+    font-size: 2.4em;
+	}
 	.container {
 		width: 16em;
 	}
